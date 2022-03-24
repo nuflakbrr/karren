@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nuflakbrr/karren.git#master"
+    "url": "git+https://github.com/nuflakbrr/karren/tree/main/backend"
   },
   "author": "Ala-ala group",
   "license": "MIT",
