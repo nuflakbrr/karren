@@ -1,9 +1,11 @@
 import React from 'react'
-import { Navbar } from '../components'
+
+import { Navbar, SEO } from '../components'
 
 function Home() {
     return (
         <>
+            <SEO title='Karren - Platform Sewa Mobil Pertama di SMK Telkom Malang' keyword='Car Rental, Website, SEO, Car, Rental, Karren, KARREN' desc='' />
             <Navbar />
             <div class="bg-white py-6 sm:py-8 lg:py-12">
                 <div class="max-w-screen-xl px-4 md:px-8 mx-auto">

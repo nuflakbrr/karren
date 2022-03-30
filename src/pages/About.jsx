@@ -1,16 +1,19 @@
 import React from 'react'
-import { Navbar } from '../components'
+
+import { Navbar, SEO } from '../components'
+import CarAbout from '../images/car-about.png'
 
 function About() {
     return (
         <>
+            <SEO title='Tentang - Karren' keyword='Car Rental, Website, SEO, Car, Rental, Karren, KARREN' desc='' />
             <Navbar />
             <div class="bg-white py-2 sm:py-4 lg:py-8">
                 <div class="max-w-screen-xl px-4 md:px-8 mx-auto">
                     <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
                         <div>
                             <div class="h-64 md:h-auto bg-gray-100 overflow-hidden rounded-lg shadow-lg">
-                                <img src="https://www.mobil88.astra.co.id/blog/wp-content/uploads/2021/03/2NakTet" loading="lazy" alt="Photo by Martin Sanchez" class="w-full h-full object-cover object-center" />
+                                <img src={CarAbout} loading="lazy" alt="Photo by Martin Sanchez" class="w-full h-full object-cover object-center" />
                             </div>
                         </div>
 
