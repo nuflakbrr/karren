@@ -1,9 +1,12 @@
 import React from 'react'
 
-import { Navbar, SEO } from '../components'
+import { Footer, Navbar, SEO, TeamCard } from '../components'
 import CarAbout from '../images/car-about.png'
+import komedi from '../data/Komedi'
 
 function About() {
+    const { komedis } = komedi
+
     return (
         <>
             <SEO title='Tentang - Karren' keyword='Car Rental, Website, SEO, Car, Rental, Karren, KARREN' desc='' />
@@ -33,6 +36,22 @@ function About() {
                     </div>
                 </div>
             </div>
+            <section className="text-gray-600 body-font">
+                <div className="container px-5 py-24 mx-auto">
+                    <div className="flex flex-col text-center w-full mb-20">
+                        <h1 className="text-green-700 text-2xl sm:text-3xl font-bold text-center mb-4 md:mb-6 tracking-widest">Komedi Group</h1>
+                        <p className="lg:w-2/4 mx-auto leading-relaxed text-md"><span className='bg-gray-300 p-1.5 rounded-lg font-bold'>Komedi Group</span> adalah sekumpulan siswa SMK Telkom Malang yang berambisi membuat sebuah aplikasi guna untuk masyarakat. Dengan penggunaan aplikasi ini diharapkan masyarakat dapat terbantu. Mari berkenalan dengan kami!</p>
+                    </div>
+                    <div className="flex flex-wrap -m-4 justify-center items-center md:justify-center md:items-center">
+                        {
+                            komedis.map((komedi) => (
+                                <TeamCard key={komedi.id} img={komedi.img} name={komedi.name} job={komedi.job} desc={komedi.desc} github={komedi.github} twitter={komedi.twitter} instagram={komedi.instagram} website={komedi.website} />
+                            ))
+                        }
+                    </div>
+                </div>
+            </section>
+            <Footer />
         </>
     )
 }
