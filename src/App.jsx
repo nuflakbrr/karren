@@ -7,14 +7,14 @@ import About from './pages/About'
 import NotFound from './pages/404'
 
 // Admin
-import DashboardAdmin from './pages/admin/Dashboard'
-import LoginAdmin from './pages/admin/Login'
-import RegisterAdmin from './pages/admin/Register'
+import DashboardAdmin from './pages/admin/DashboardAdmin'
+import LoginAdmin from './pages/admin/LoginAdmin'
+import RegisterAdmin from './pages/admin/RegisterAdmin'
 
 // Customer
-import DashboardCustomer from './pages/customer/Dashboard'
-import LoginCustomer from './pages/customer/Login'
-import RegisterCustomer from './pages/customer/Register'
+import DashboardCustomer from './pages/customer/DashboardCustomer'
+import LoginCustomer from './pages/customer/LoginCustomer'
+import RegisterCustomer from './pages/customer/RegisterCustomer'
 
 function App() {
   return (
