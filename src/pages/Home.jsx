@@ -26,7 +26,7 @@ function Home() {
 
                         {/* <!-- image - start --> */}
                         <div className="xl:w-3/6 h-48 lg:h-auto bg-slate-100 overflow-hidden shadow-lg rounded-lg">
-                            <img src={CarHome} loading="lazy" alt="Photo by Fakurian Design" className="w-full h-full object-cover object-center" />
+                            <img src={CarHome} loading="lazy" alt="Car Hero Image" className="w-full h-full object-cover object-center" />
                         </div>
                         {/* <!-- image - end --> */}
                     </section>
@@ -173,31 +173,31 @@ function Home() {
                                 </div>
                                 {/* <!-- text - end --> */}
 
-                                <div class="grid grid-cols-2 md:grid-cols-4 bg-indigo-500 rounded-lg gap-6 md:gap-8 p-6 md:p-8">
+                                <div class="grid grid-cols-2 md:grid-cols-4 bg-green-700 rounded-lg gap-6 md:gap-8 p-6 md:p-8">
                                     {/* <!-- stat - start --> */}
                                     <div class="flex flex-col items-center">
                                         <div class="text-white text-xl sm:text-2xl md:text-3xl font-bold">200</div>
-                                        <div class="text-indigo-200 text-sm sm:text-base">People</div>
+                                        <div class="text-green-200 text-sm sm:text-base">People</div>
                                     </div>
                                     {/* <!-- stat - end --> */}
 
                                     {/* <!-- stat - start --> */}
                                     <div class="flex flex-col items-center">
                                         <div class="text-white text-xl sm:text-2xl md:text-3xl font-bold">500+</div>
-                                        <div class="text-indigo-200 text-sm sm:text-base">People</div>
+                                        <div class="text-green-200 text-sm sm:text-base">People</div>
                                     </div>
 
                                     {/* <!-- stat - start --> */}
                                     <div class="flex flex-col items-center">
                                         <div class="text-white text-xl sm:text-2xl md:text-3xl font-bold">1000+</div>
-                                        <div class="text-indigo-200 text-sm sm:text-base">Customers</div>
+                                        <div class="text-green-200 text-sm sm:text-base">Customers</div>
                                     </div>
                                     {/* <!-- stat - end --> */}
 
                                     {/* <!-- stat - start --> */}
                                     <div class="flex flex-col items-center">
                                         <div class="text-white text-xl sm:text-2xl md:text-3xl font-bold">A couple</div>
-                                        <div class="text-indigo-200 text-sm sm:text-base">Coffee breaks</div>
+                                        <div class="text-green-200 text-sm sm:text-base">Coffee breaks</div>
                                     </div>
                                     {/* <!-- stat - end --> */}
                                 </div>
@@ -263,8 +263,8 @@ function Home() {
                             <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
                                 <div class="md:h-80 flex flex-col sm:flex-row bg-gray-200 rounded-lg overflow-hidden">
                                     {/* <!-- image - start --> */}
-                                    <div class="w-full sm:w-1/2 lg:w-2/5 h-48 sm:h-auto order-first sm:order-none bg-gray-300">
-                                        <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&q=75&fit=crop&w=1000" loading="lazy" alt="Photo by Andras Vas" class="w-full h-full object-cover object-center" />
+                                    <div class="w-full sm:w-1/2 lg:w-2/5 h-48 sm:h-auto order-first sm:order-none bg-slate-300">
+                                        <img src={CarHome} loading="lazy" alt="Photo by Andras Vas" class="w-full h-full object-cover object-center" />
                                     </div>
                                     {/* <!-- image - end --> */}
 
