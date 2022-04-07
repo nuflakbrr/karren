@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 import { SEO } from '../../components'
 
-function Login() {
+function LoginCustomer() {
     return (
         <>
             <SEO title='Masuk - Karren' keyword='Car Rental, Website, SEO, Car, Rental, Karren, KARREN' desc='' />
@@ -37,4 +37,4 @@ function Login() {
     )
 }
 
-export default Login
+export default LoginCustomer

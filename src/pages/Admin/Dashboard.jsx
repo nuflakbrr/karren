@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Footer, SidebarAdmin } from '../../components'
 
-function Dashboard() {
+function DashboardAdmin() {
     return (
         <div className='dark:bg-gray-900 min-h-screen lg:overflow-x-auto overflow-x-hidden'>
             <SidebarAdmin />
@@ -46,4 +46,4 @@ function Dashboard() {
     )
 }
 
-export default Dashboard
+export default DashboardAdmin

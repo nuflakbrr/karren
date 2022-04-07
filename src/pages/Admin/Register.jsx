@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 import { SEO } from '../../components'
 
-function register() {
+function RegisterAdmin() {
     return (
         <>
             <SEO title='Masuk - Karren' keyword='Car Rental, Website, SEO, Car, Rental, Karren, KARREN' desc='' />
@@ -61,4 +61,4 @@ function register() {
     )
 }
 
-export default register
+export default RegisterAdmin
