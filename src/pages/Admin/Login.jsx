@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-import { SEO } from '../components'
+import { SEO } from '../../components'
 
 function Login() {
     return (
@@ -9,7 +9,7 @@ function Login() {
             <SEO title='Masuk - Karren' keyword='Car Rental, Website, SEO, Car, Rental, Karren, KARREN' desc='' />
             <div className="bg-white py-6 sm:py-8 lg:py-12">
                 <div className="max-w-screen-2xl px-4 md:px-8 mx-auto">
-                    <h2 className="text-green-700 text-3xl lg:text-4xl font-bold text-center mb-2 md:mb-2">Selamat Datang!</h2>
+                    <h2 className="text-green-700 text-3xl lg:text-4xl font-bold text-center mb-2 md:mb-2">Selamat Datang Admin!</h2>
                     <h6 className="text-gray-800 text-md lg:text-md text-center mb-4 md:mb-8">Silakan Masukkan Akun Anda</h6>
 
                     <form className="max-w-lg border rounded-lg mx-auto">
