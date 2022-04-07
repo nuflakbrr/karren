@@ -15,8 +15,8 @@ function About() {
                 <div className="max-w-screen-xl px-4 md:px-8 mx-auto">
                     <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
                         <div>
-                            <div className="h-64 md:h-auto bg-gray-100 overflow-hidden rounded-lg shadow-lg">
-                                <img src={CarAbout} loading="lazy" alt="Photo by Martin Sanchez" className="w-full h-full object-cover object-center" />
+                            <div className="h-64 md:h-auto bg-slate-100 overflow-hidden rounded-lg shadow-lg">
+                                <img src={CarAbout} loading="lazy" alt="Car About Image" className="w-full h-full object-cover object-center" />
                             </div>
                         </div>
 
