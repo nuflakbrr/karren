@@ -1,29 +1,46 @@
-import React, { useState } from 'react'
-import { NavLink, useNavigate } from 'react-router-dom'
-import axios from 'axios'
+import React, { useState, useEffect } from 'react'
+import { NavLink } from 'react-router-dom'
 
 import { SEO } from '../../components'
+
+import axios from 'axios'
+import baseUrl from '../../config'
 
 function LoginAdmin() {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [msg, setMsg] = useState('')
-    let navigate = useNavigate()
 
     const LoginAuth = async (e) => {
         e.preventDefault()
+
+        const dataLogin = {
+            email: email,
+            password: password
+        }
+
         try {
-            await axios.post('http://localhost:5000/api/petugas/login', {
-                email: email,
-                password: password
-            })
-            navigate('/admin/dashboard')
-        } catch (error) {
-            if (error) {
-                setMsg('Email atau Password salah')
+            const res = await axios.post(`${baseUrl}/petugas/login`, dataLogin)
+            if (res.data.success === 1) {
+                localStorage.setItem('token', res.data.token)
+                localStorage.setItem('role', res.data.account.role)
+                setMsg(res.data.message)
+                window.location.href = '/admin/dashboard'
+            } else {
+                setMsg(res.data.token)
             }
+        } catch (err) {
+            console.log(err)
         }
     }
+
+    // If token exist, this function will redirect to dashboard and can't access login page again
+    useEffect(() => {
+        const token = localStorage.getItem('token')
+        if (token !== null) {
+            window.location.href = '/admin/dashboard'
+        }
+    }, [])
 
     return (
         <>
