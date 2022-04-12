@@ -17,7 +17,7 @@ function AdminPage() {
                     <div class="grid sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 md:gap-6 xl:gap-8">
                         {/* <!-- article - start --> */}
                         <NavLink to="/admin/login" class="group w-full md:w-32 lg:w-48 h-48 md:h-full block self-start shrink-0 bg-gray-100 overflow-hidden relative">
-                            <div class="flex flex-col md:flex-row items-center border rounded-lg overflow-hidden">
+                            <div class="flex flex-col md:flex-row items-start border rounded-lg overflow-hidden">
                                 <div class="flex flex-col gap-2 p-4 lg:p-6">
                                     <span class="text-gray-400 text-sm">/admin/login</span>
 
@@ -37,7 +37,7 @@ function AdminPage() {
 
                         {/* <!-- article - start --> */}
                         <NavLink to="/admin/register" class="group w-full md:w-32 lg:w-48 h-48 md:h-full block self-start shrink-0 bg-gray-100 overflow-hidden relative">
-                            <div class="flex flex-col md:flex-row items-center border rounded-lg overflow-hidden">
+                            <div class="flex flex-col md:flex-row items-start border rounded-lg overflow-hidden">
                                 <div class="flex flex-col gap-2 p-4 lg:p-6">
                                     <span class="text-gray-400 text-sm">/admin/register</span>
 
@@ -57,7 +57,7 @@ function AdminPage() {
 
                         {/* <!-- article - start --> */}
                         <NavLink to="/admin/dashboard" class="group w-full md:w-32 lg:w-48 h-48 md:h-full block self-start shrink-0 bg-gray-100 overflow-hidden relative">
-                            <div class="flex flex-col md:flex-row items-center border rounded-lg overflow-hidden">
+                            <div class="flex flex-col md:flex-row items-start border rounded-lg overflow-hidden">
                                 <div class="flex flex-col gap-2 p-4 lg:p-6">
                                     <span class="text-gray-400 text-sm">/admin/dashboard</span>
 
