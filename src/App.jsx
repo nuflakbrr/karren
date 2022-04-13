@@ -17,6 +17,7 @@ import ProfileAdmin from './pages/admin/ProfileAdmin'
 import DashboardCustomer from './pages/customer/DashboardCustomer'
 import LoginCustomer from './pages/customer/LoginCustomer'
 import RegisterCustomer from './pages/customer/RegisterCustomer'
+import ListMember from './pages/admin/ListMember'
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path='/admin/login' element={<LoginAdmin />} />
         <Route path='/admin/register' element={<RegisterAdmin />} />
         <Route path='/admin/dashboard' element={<DashboardAdmin />} />
+        <Route path='/admin/members' element={<ListMember />} />
         <Route path='/admin/profile' element={<ProfileAdmin />} />
 
         {/* Customer */}
