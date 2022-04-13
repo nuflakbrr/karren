@@ -7,6 +7,7 @@ export default function Sidebar() {
     const [collapseShow, setCollapseShow] = useState('hidden')
 
     const token = localStorage.getItem('token')
+    const account = localStorage.getItem('account')
     const role = localStorage.getItem('role')
 
     // If token and role not exist, this condition will redirect to login page
@@ -16,6 +17,7 @@ export default function Sidebar() {
 
     const logOut = () => {
         localStorage.removeItem('token')
+        localStorage.removeItem('account')
         localStorage.removeItem('role')
         window.location.href = '/admin'
     }
