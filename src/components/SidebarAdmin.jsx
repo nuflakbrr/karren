@@ -7,7 +7,6 @@ export default function Sidebar() {
     const [collapseShow, setCollapseShow] = useState('hidden')
 
     const token = localStorage.getItem('token')
-    const account = localStorage.getItem('account')
     const role = localStorage.getItem('role')
 
     // If token and role not exist, this condition will redirect to login page
@@ -106,11 +105,15 @@ export default function Sidebar() {
                         </h6>
 
                         <ul className='md:flex-col md:min-w-full flex flex-col list-none md:mb-4'>
-                            <li className='items-center'>
-                                <NavLink className={activeClassses('#')} to='#'>
-                                    <FaUserAlt className='mr-2 text-lg' /> Petugas
-                                </NavLink>
-                            </li>
+                            {
+                                role === 'superadmin' && (
+                                    <li className='items-center'>
+                                        <NavLink className={activeClassses('#')} to='#'>
+                                            <FaUserAlt className='mr-2 text-lg' /> Petugas
+                                        </NavLink>
+                                    </li>
+                                )
+                            }
 
                             <li className='items-center'>
                                 <NavLink className={activeClassses('/admin')} to='/admin' onClick={logOut}>
