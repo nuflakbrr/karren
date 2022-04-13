@@ -30,8 +30,8 @@ function ProfileAdmin() {
                                     </select>
                                 </div>
                                 <div className='mt-2 flex flex-col'>
-                                    <label htmlFor='Photo' className='mb-2'>Foto Profil <span className='text-red-500'>*link</span></label>
-                                    <input type='text' id='photo' className='w-full flex-1 bg-gray-white text-gray-800 placeholder-gray-400 border border-gray-300 focus:ring ring-green-300 dark:ring-green-500 rounded outline-none transition duration-100 px-3 py-2' required />
+                                    <label htmlFor='Photo' className='mb-2'>Foto Profil</label>
+                                    <input type='text' id='photo' className='w-full flex-1 bg-gray-white text-gray-800 placeholder-gray-400 border border-gray-300 focus:ring ring-green-300 dark:ring-green-500 rounded outline-none transition duration-100 px-3 py-2' placeholder="ex: https://naufalakbar.me/images/avatar.jpg" required />
                                 </div>
                                 <div className='mt-2 flex flex-col justify-end items-end'>
                                     <button type='submit' className='flex items-center px-5 py-2 font-semibold text-white transition duration-500 ease-in-out transform bg-green-700 rounded-lg hover:bg-green-800 focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2'>
