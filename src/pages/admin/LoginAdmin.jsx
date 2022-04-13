@@ -22,8 +22,9 @@ function LoginAdmin() {
         try {
             const res = await axios.post(`${baseUrl}/petugas/login`, dataLogin)
             if (res.data.success === 1) {
+                let account = res.data.account
                 localStorage.setItem('token', res.data.token)
-                localStorage.setItem('account', res.data.account.account)
+                localStorage.setItem('account', JSON.stringify(account))
                 localStorage.setItem('role', res.data.account.role)
                 setMsg(res.data.message)
                 window.location.href = '/admin/dashboard'
