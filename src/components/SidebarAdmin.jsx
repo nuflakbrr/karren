@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { AiOutlineClose } from 'react-icons/ai'
-import { FaHome, FaUserAlt, FaPowerOff } from 'react-icons/fa'
+import { FaHome, FaUserAlt, FaPowerOff, FaCar, FaCartPlus } from 'react-icons/fa'
 
 export default function Sidebar() {
     const [collapseShow, setCollapseShow] = useState('hidden')
@@ -21,7 +21,7 @@ export default function Sidebar() {
     }
 
     const activeClass = 'text-white text-xs uppercase py-3 font-bold flex'
-    const inActiveClass = 'text-gray-300 hover:text-gray-400 text-xs uppercase py-3 font-bold flex'
+    const inActiveClass = 'text-gray-300 hover:text-gray-200 text-xs uppercase py-3 font-bold flex'
 
     const activeClassses = (path) => {
         return window.location.pathname === path ? activeClass : inActiveClass
@@ -29,14 +29,20 @@ export default function Sidebar() {
 
     const links = [
         { path: '/admin/dashboard', name: 'Beranda', icon: <FaHome className='mr-2 text-lg' /> },
+        { path: '/admin/cars', name: 'Mobil', icon: <FaCar className='mr-2 text-lg' /> },
+        { path: '/admin/members', name: 'Member', icon: <FaUserAlt className='mr-2 text-lg' /> },
+        { path: '/admin/transactions', name: 'Transaksi', icon: <FaCartPlus className='mr-2 text-lg' /> },
     ]
 
     return (
         <>
             <nav className='md:left-0 md:block md:fixed md:top-0 md:bottom-0 md:overflow-y-auto md:flex-row md:flex-nowrap md:overflow-hidden shadow-xl bg-green-700 flex flex-wrap items-center justify-between relative md:w-64 z-10 py-4 px-6'>
                 <div className='md:flex-col md:items-stretch md:min-h-full md:flex-nowrap px-0 flex flex-wrap items-center justify-between w-full mx-auto'>
-                    <NavLink className='md:block text-left md:pb-2 text-white mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0' to='/'>
-                        Hai, {localStorage.getItem('role')}
+                    <NavLink className='md:block text-left md:pb-2 text-white mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0' to='/admin/profile'>
+                        <div className="flex items-center">
+                            <img class="w-7 h-7 md:w-10 md:h-10 mr-2 rounded-md overflow-hidden" src="https://therminic2018.eu/wp-content/uploads/2018/07/dummy-avatar.jpg" />
+                            Hai, {localStorage.getItem('role')}
+                        </div>
                     </NavLink>
 
                     <button className='cursor-pointer text-white focus:text-white md:hidden px-3 py-1 text-xl leading-none bg-transparent rounded border border-solid border-transparent' type='button' onClick={() => setCollapseShow('bg-green-900 m-2 py-3 px-6')}>

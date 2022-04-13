@@ -11,6 +11,7 @@ import AdminPage from './pages/admin/AdminPage'
 import DashboardAdmin from './pages/admin/DashboardAdmin'
 import LoginAdmin from './pages/admin/LoginAdmin'
 import RegisterAdmin from './pages/admin/RegisterAdmin'
+import ProfileAdmin from './pages/admin/ProfileAdmin'
 
 // Customer
 import DashboardCustomer from './pages/customer/DashboardCustomer'
@@ -31,6 +32,7 @@ function App() {
         <Route path='/admin/login' element={<LoginAdmin />} />
         <Route path='/admin/register' element={<RegisterAdmin />} />
         <Route path='/admin/dashboard' element={<DashboardAdmin />} />
+        <Route path='/admin/profile' element={<ProfileAdmin />} />
 
         {/* Customer */}
         <Route path='/login' element={<LoginCustomer />} />
