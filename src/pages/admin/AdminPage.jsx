@@ -62,13 +62,33 @@ function AdminPage() {
                                     <span class="text-gray-400 text-sm">/admin/dashboard</span>
 
                                     <h2 class="text-gray-800 text-xl font-bold">
-                                        <a href="#" class="hover:text-green-800 text-green-700 transition duration-100">Halaman Dashboard</a>
+                                        <a class="hover:text-green-800 text-green-700 transition duration-100">Halaman Dashboard</a>
                                     </h2>
 
                                     <p class="text-gray-500">cuman halaman dashboard buat admin kok.</p>
 
                                     <div>
-                                        <a href="#" class="text-green-500 hover:text-green-600 active:text-green-700 font-semibold transition duration-100">Kunjungi Halaman 🚀</a>
+                                        <a class="text-green-500 hover:text-green-600 active:text-green-700 font-semibold transition duration-100">Kunjungi Halaman 🚀</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </NavLink>
+                        {/* <!-- article - end --> */}
+
+                        {/* <!-- article - start --> */}
+                        <NavLink to="/" class="group w-full md:w-32 lg:w-48 h-48 md:h-full block self-start shrink-0 bg-gray-100 overflow-hidden relative">
+                            <div class="flex flex-col md:flex-row items-start border rounded-lg overflow-hidden">
+                                <div class="flex flex-col gap-2 p-4 lg:p-6">
+                                    <span class="text-gray-400 text-sm">/</span>
+
+                                    <h2 class="text-gray-800 text-xl font-bold">
+                                        <a class="hover:text-green-800 text-green-700 transition duration-100">Halaman Landingpage</a>
+                                    </h2>
+
+                                    <p class="text-gray-500">cuman halaman landingpage.</p>
+
+                                    <div>
+                                        <a class="text-green-500 hover:text-green-600 active:text-green-700 font-semibold transition duration-100">Kunjungi Halaman 🚀</a>
                                     </div>
                                 </div>
                             </div>
