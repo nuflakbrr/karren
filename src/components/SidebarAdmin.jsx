@@ -108,7 +108,7 @@ export default function Sidebar() {
                             {
                                 role === 'superadmin' && (
                                     <li className='items-center'>
-                                        <NavLink className={activeClassses('#')} to='#'>
+                                        <NavLink className={activeClassses('/admin/employee')} to='/admin/employee'>
                                             <FaUserAlt className='mr-2 text-lg' /> Petugas
                                         </NavLink>
                                     </li>
