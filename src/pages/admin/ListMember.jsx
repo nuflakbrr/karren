@@ -7,6 +7,9 @@ function ListMember() {
         <div className='dark:bg-gray-900 min-h-screen lg:overflow-x-auto overflow-x-hidden'>
             <SidebarAdmin />
             <div className='relative md:ml-64'>
+                <div className="flex justify-start container px-5 pt-5">
+                    <h1 className='font-bold text-2xl'>List Member</h1>
+                </div>
                 <div className='container flex flex-col px-5 py-10 mx-auto lg:items-center'>
                     <table className="border-collapse w-full">
                         <thead>
@@ -77,6 +80,11 @@ function ListMember() {
                             </tr>
                         </tbody>
                     </table>
+                </div>
+                <div className="flex justify-end container px-5 lg:mb-0 mb-5">
+                    <button className='flex items-center px-5 py-2 font-semibold text-white transition duration-500 ease-in-out transform bg-green-700 rounded-lg hover:bg-green-800'>
+                        Tambah Data
+                    </button>
                 </div>
                 {/* <section className='text-gray-300'>
                     <div className='container flex flex-col px-5 py-10 mx-auto lg:items-center'>
