@@ -2,7 +2,7 @@ const komedi = {
     komedis: [
         {
             id: 1,
-            img: "https://naufalakbar.me/images/avatar.jpg",
+            img: "https://naufalakbar.me/static/images/avatar.jpg",
             name: "Naufal Akbar Nugroho",
             job: "Backend, Frontend",
             desc: "I'm passionate about making contributions to providing technology knowledge for everyone!",
@@ -12,7 +12,7 @@ const komedi = {
         },
         {
             id: 2,
-            img: "https://naufalakbar.me/images/vander.jpg",
+            img: "https://naufalakbar.me/static/images/vander.jpg",
             name: "Ivander Dzaky Khairullah",
             job: "Frontend",
             desc: "Accustomed to work both in team or individual project and is willing to learn from various field",
@@ -21,7 +21,7 @@ const komedi = {
         },
         {
             id: 3,
-            img: "https://naufalakbar.me/images/rere.jpg",
+            img: "https://naufalakbar.me/static/images/rere.jpg",
             name: "Regina Adristya",
             job: "Backend",
             desc: "If we don't try and take risks, we will miss many great opportunities in life.",
@@ -30,7 +30,7 @@ const komedi = {
         },
         {
             id: 4,
-            img: "https://naufalakbar.me/images/reva.jpg",
+            img: "https://naufalakbar.me/static/images/reva.jpg",
             name: "Revalina Santosa",
             job: "Frontend",
             desc: "Work to become, not to acquire.",
