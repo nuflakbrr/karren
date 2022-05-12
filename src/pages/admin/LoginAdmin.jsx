@@ -27,14 +27,19 @@ function LoginAdmin() {
                 localStorage.setItem('account', JSON.stringify(account))
                 localStorage.setItem('role', res.data.account.role)
                 setMsg(res.data.message)
-                window.location.href = '/admin/dashboard'
+                setTimeout(() => {
+                    window.location.href = '/admin/dashboard'
+                }, 1500)
             } else {
-                setMsg(res.data.token)
+                setMsg(res.data.message)
             }
         } catch (err) {
             console.log(err)
         }
     }
+
+    const invalidClass = 'bg-red-600 p-2 rounded text-white'
+    const successClass = 'bg-green-600 p-2 rounded text-white'
 
     // If token exist, this function will redirect to dashboard and can't access login page again
     useEffect(() => {
@@ -54,7 +59,14 @@ function LoginAdmin() {
 
                     <form className="max-w-lg border rounded-lg mx-auto" onSubmit={LoginAuth}>
                         <div className="flex flex-col gap-4 p-4 md:p-8">
-                            <p>{msg}</p>
+                            <div>
+                                <p className={msg === 'Password invalid'
+                                    ? invalidClass
+                                    : msg === 'Login succesfuly, Welcome Back!'
+                                        ? successClass
+                                        : ''
+                                }>{msg}</p>
+                            </div>
                             <div>
                                 <label htmlFor="email" className="inline-block text-gray-800 text-sm sm:text-base mb-2">Email <span className="text-red-500">*</span></label>
                                 <input type="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} className="w-full bg-gray-50 text-gray-800 border focus:ring ring-green-400 rounded outline-none transition duration-100 px-3 py-2" required />
